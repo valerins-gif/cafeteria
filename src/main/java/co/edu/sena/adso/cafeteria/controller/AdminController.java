@@ -57,4 +57,8 @@ public class AdminController {
         menu.eliminar(id);
         return "redirect:/admin/platos";
     }
+    @GetMapping("/contacto")
+    public String mostrarContacto() {
+    return "contacto"; // Esto busca el archivo contacto.html dentro de src/main/resources/templates/
+}
 }
